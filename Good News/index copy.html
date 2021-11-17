@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="good news.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nav-styling.css">
+    <link rel="stylesheet" href="post-styling.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="move-nav.js" defer></script>
+    <script src="post.js" defer></script>
+    <title>Good News</title>
+</head>
+<body>
+
+    <header>
+        <h1>Good News</h1>
+    </header>
+
+    <nav>
+        <img src="good news.png" alt="logo">
+            <ul>
+                <li><button id="create-post">Create Post</button></li>
+                <li><button>Link 1</button></li>
+                <li><button>Link 2</button></li>
+                <li><button>Link 3</button></li>
+            </ul>
+    </nav>
+
+<form action="index.php" method="post">
+    <div id="outer-modal">
+        <div id="inner-modal">
+                <input type="text" placeholder="Title..." focus="true" id="title" name="title" required="true">
+                <textarea type="text" placeholder="Message..." id="message" rows="10" resizable="false" name="message" required="true"></textarea>
+
+                <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
+                <label for="file" style="cursor: pointer;" id="upload">Upload Image</label>
+                <h5 id="filename">No file chosen.</h5>
+                <!-- <img id="output"> -->
+
+                <input type="button" value="Cancel" id="cancel">
+                <input type="submit" value="Post" id="post" name="post">
+        </div>
+    </div>
+</form>
+
+    <div class="post-with-text">
+        <h2 class="text-title">Title goes here</h2>
+        <div class="message">
+            <h3>Here is my message.</h3>
+        </div>
+    </div>
+
+    <div class="post-with-text">
+        <h2 class="text-title">A super long title goes here</h2>
+        <div class="message">
+            <h3>Here is my message. This message is longer. It continues on the next line.</h3>
+        </div>
+    </div>
+
+    <div class="post-with-image">
+        <h2 class="image-title">Title goes here</h2>
+        <h3 class="description">Here is my description.</h3>
+        <img src="good news.png" alt="image">
+    </div>
+
+    <div class="post-with-image">
+        <h2 class="image-title">A super long title goes here</h2>
+        <h3 class="description">Here is my description. This description is longer. It continues on the next line.</h3>
+        <img src="good news.png" alt="image">
+    </div>
+
+
+    
+</body>
+</html>

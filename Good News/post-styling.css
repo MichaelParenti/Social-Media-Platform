@@ -1,0 +1,55 @@
+/* POST WITH TEXT ONLY */
+.post-with-text{
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: -3px -2px 0px #66FCF1;
+    width: 50vw;
+    max-width: 650px;
+    padding: 20px;
+    background: #1F2833;
+    margin: 25px 0px;
+}
+.text-title{
+    background: #0B0C10;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: clamp(8px, 4vw, 24px);
+}
+.message{
+    margin: 0px 8px;
+    font-size: clamp(8px, 2vw, 16px);
+}
+.post-with-text .message h3{
+    height: fit-content;
+}
+
+/* POST WITH IMAGE */
+.post-with-image{
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: -3px -2px 0px #66FCF1;
+    width: 50vw;
+    max-width: 650px;
+    padding: 20px;
+    background: #1F2833;
+    margin: 25px 0px;
+}
+.image-title{
+    background: #0B0C10;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: clamp(8px, 4vw, 24px);
+}
+.description{
+    margin: 0px 8px 8px 8px;
+    font-size: clamp(8px, 2vw, 16px);
+}

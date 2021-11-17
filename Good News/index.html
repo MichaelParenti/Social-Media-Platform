@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="good news.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nav-styling.css">
+    <link rel="stylesheet" href="post-styling.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="move-nav.js" defer></script>
+    <script src="post.js" defer></script>
+    <title>Good News</title>
+</head>
+<body>
+
+    <header>
+        <h1>Good News</h1>
+    </header>
+
+    <nav>
+        <img src="good news.png" alt="logo">
+            <ul>
+                <li><button id="create-post" type="button">Create Post</button></li>
+                <li><button type="button">Link 1</button></li>
+                <li><button type="button">Link 2</button></li>
+                <li><button type="button">Link 3</button></li>
+            </ul>
+    </nav>
+
+<form action="index.php" method="post" enctype="multipart/form-data">
+    <div id="outer-modal">
+        <div id="inner-modal">
+                <input type="text" placeholder="Title..." id="title" name="title" autocomplete="off" required="true">
+                <textarea type="text" placeholder="Message..." id="message" rows="10" resizable="false" name="message" required="true"></textarea>
+
+                <input type="file"  accept="image/*" name="fileToUpload" id="file"  onchange="loadFile(event)" style="display: none;">
+                <label for="file" style="cursor: pointer;" id="upload">Upload Image</label>
+                <h5 id="filename">No file chosen.</h5>
+
+                <input type="button" value="Cancel" id="cancel">
+                <input type="submit" value="Post" id="post" name="post">
+        </div>
+    </div>
+</form>
+        
+        
+      
+
+                <div class="post-with-text">
+                    <h2 class="text-title">Title 3</h2>
+                    <div class="message">
+                        <h3>Message 3</h3>
+                    </div>
+                    <img src="" alt="image">
+                </div>
+
+
+
+                <div class="post-with-text">
+                    <h2 class="text-title">Title 2</h2>
+                    <div class="message">
+                        <h3>Message 2</h3>
+                    </div>
+                    <img src="images/616f7c14ea1849.09073037.jpg" alt="image">
+                </div>
+
+
+
+            <div class="post-with-text">
+                <h2 class="text-title">Title</h2>
+                <div class="message">
+                    <h3>Message</h3>
+                </div>
+            </div>
+
+
+
+            <div class="post-with-text">
+                <h2 class="text-title">The posting function is now working.</h2>
+                <div class="message">
+                    <h3>Now I have to get it to work with images.</h3>
+                </div>
+            </div>
+
+
+
+                <div class="post-with-text">
+                    <h2 class="text-title">Title goes here</h2>
+                    <div class="message">
+                        <h3>Here is my message.</h3>
+                    </div>
+                </div>
+
+
+            
+                <div class="post-with-text">
+                    <h2 class="text-title">A super long title goes here</h2>
+                    <div class="message">
+                        <h3>Here is my message. This message is longer. It continues on the next line.</h3>
+                    </div>
+                </div>
+            
+
+
+                <div class="post-with-image">
+                    <h2 class="image-title">Title goes here</h2>
+                    <h3 class="description">Here is my description.</h3>
+                    <img id="output" src="" alt="image">
+                </div>
+
+
+            
+                <div class="post-with-image">
+                    <h2 class="image-title">A super long title goes here</h2>
+                    <h3 class="description">Here is my description. This description is longer. It continues on the next line.</h3>
+                    <img id="output" src="" alt="image">
+                </div>
+
+
+
+                <div class="post-with-text">
+                    <h2 class="text-title">This is my title</h2>
+                    <div class="message">
+                        <h3>sdkfjdhs sdkj hskjdh fdskjh dskj hskdj hskj dhskd jhds kjhf kjds skjf hskdj hksjd hksjd hdksj hskj </h3>
+                    </div>
+                </div>
+   
+
+
+                <div class="post-with-text">
+                    <h2 class="text-title">Encouraging News Post</h2>
+                    <div class="message">
+                        <h3>This is an encouraging message for people who need to be encouraged.</h3>
+                    </div>
+                </div>
+
+
+
+                <div class="post-with-text">
+                    <h2 class="text-title">here is my last post in the testing process</h2>
+                    <div class="message">
+                        <h3>The message for my last post in the testing process is the very sentence that you are currently reading.</h3>
+                    </div>
+                </div>
+
+</body>
+</html>
