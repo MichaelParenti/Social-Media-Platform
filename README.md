@@ -7,8 +7,3 @@ The posts are all created with the same class so that the css styling is applied
 Also, when a post is submitted, there is a php redirect to the original html page.\
 \
 It is still a work in progress as it only has a few main functions listed above.
-
-    This platform is for sharing encouraging posts, and is called "Good News".
-    The working version of this website is hosted at the link below.
-\
-http://socialmediaplatform.infinityfreeapp.com/Good%20News/index.html
