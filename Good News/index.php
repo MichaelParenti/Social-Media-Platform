@@ -2,6 +2,8 @@
 
 if (isset($_POST['post'])) {
 
+    
+    
     #declarations
     $title = $_POST['title'];
     $message = $_POST['message'];
