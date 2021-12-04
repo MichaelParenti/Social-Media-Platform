@@ -87,6 +87,9 @@ if (isset($_POST['post'])) {
 
                 injectData("index.html", $post_with_image, 2300);
 
+    
+    
+    
     #go to index.html when finished
     header("Location: $redirect");
 }
