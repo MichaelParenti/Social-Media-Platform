@@ -20,6 +20,9 @@ if (isset($_POST['post'])) {
     
     $allowed = array('jpg', 'jpeg', 'png', 'gif', 'bmp', 'raw', 'webp', 'tiff', 'heif', 'indd', 'svg', 'ico', 'eps', 'wdp', 'apng');
     
+    
+    
+    
     #upload image
     if(in_array($fileActualExt, $allowed)){
         if($fileError === 0){
