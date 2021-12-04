@@ -97,6 +97,9 @@ if (isset($_POST['post'])) {
     
     #go to index.html when finished
     header("Location: $redirect");
+    
+    
+    
 }
  
 ?> 
