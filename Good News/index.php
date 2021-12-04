@@ -68,6 +68,9 @@ if (isset($_POST['post'])) {
 
         #clear form            
         echo "<script>clearForm();</script>";
+    
+    
+    
 
                 #add post to index.html
                 function injectData($myfile, $post_with_image, $position) {
